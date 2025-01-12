@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import Programs from "./pages/Porgrams";
+import Programs from "./pages/Programs";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +10,6 @@ const router = createBrowserRouter([
       {
         path: "/Programs",
         element: <Programs />,
-        loader: () => fetch("http://localhost:3310/api/programs"),
       },
     ],
   },
